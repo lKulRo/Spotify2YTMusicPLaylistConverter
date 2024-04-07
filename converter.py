@@ -10,7 +10,7 @@ load_dotenv()
 client_id = os.getenv("CLIENT_ID")
 client_secret = os.getenv("CLIENT_SECRET")
 
-playlist = "37i9dQZF1DX36edUJpD76c"
+playlist = "37i9dQZF1DZ06evO2pb4Ji"
 
 def get_access_token():
     auth_string = client_id + ":" + client_secret
@@ -47,7 +47,8 @@ def get_playlist(token):
     return [playlist_name, trackList]
 
 
-yt = YTMusic('oauth.json')
+# yt = YTMusic('oauth.json')
+yt = YTMusic("browser.json")
 playlist = get_playlist(get_access_token())
 playlistId = yt.create_playlist(playlist[0], 'skrrr')
 for item in playlist[1]:
