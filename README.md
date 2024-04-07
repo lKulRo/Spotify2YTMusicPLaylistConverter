@@ -23,7 +23,8 @@ Follow the instructions and this will generate an oauth.json file
 
 #### Method 2: Browser Authentification
 
-Work in Progress
+Open YoutubeMusic -> Dev Console -> look for authenticated POST Request(easiest way search for ```browse```)
+Look into request header and fill the missing data in browser.json
 
 ## Generating YTM-Playlist
 Change the ```playlist```-variable in the python-file with your playlist-id to generate your own youtube-music-playlist
