@@ -47,7 +47,6 @@ def get_playlist(token):
     return [playlist_name, trackList]
 
 
-
 yt = YTMusic('oauth.json')
 playlist = get_playlist(get_access_token())
 playlistId = yt.create_playlist(playlist[0], 'skrrr')
